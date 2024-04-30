@@ -17,14 +17,11 @@ import countPosFeedbackPercentage from 'helpers/countPositiveFeedbackPercentage'
  * Displays statistic for each category.
  */
 class FeedbackWidget extends Component {
-  constructor() {
-    super();
-    this.state = {
-      good: 0,
-      neutral: 0,
-      bad: 0,
-    };
-  }
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
 
   /**
    * Adds feedback to a specific feedback category.
